@@ -23,3 +23,5 @@ class models:
 
         def __str__(self):
             """return string representaion of the class"""
+            return "[{}] ({}) {}".format(self.__class__.__name
+
