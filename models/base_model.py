@@ -25,3 +25,21 @@ class models:
             """return string representaion of the class"""
             return "[{}] ({}) {}".format(self.__class__.__name
 
+         def save(self):
+        """ update of attribute updated_at with latest time
+        updated_at: datetime
+        """
+        self.updated_at = datetime.now()
+        storage.save()
+
+    def to_dict(self):
+        """
+        get the objects of the instance
+        returns: dictionary
+        """
+        temp_dict = dict(self.__dict__)
+        temp_dict['__class__'] = __class__.__name__
+        temp_dict['created_at'] = temp_dict['created_at'].isoformat()
+        temp_dict['updated_at'] = temp_dict['updated_at'].isoformat()
+        return temp_dict
+
