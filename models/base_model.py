@@ -1,13 +1,12 @@
 #!/usr/bin/python3
-""" this is the base class for all models """
+"""defines base model class """
 import uuid
 from datetime import date, datetime, time
 from . import storage
 
 
 class BaseModel:
-    """class defining commom attributes
-    for other classes"""
+    """base model class"""
 
     def __init__(self, *args, **kwargs):
         """ instance attributes
