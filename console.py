@@ -3,6 +3,7 @@
 import cmd
 import sys
 
+
 class HBNBCommand(cmd.Cmd):
     """for the prompt"""
 
@@ -22,4 +23,3 @@ class HBNBCommand(cmd.Cmd):
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
-
