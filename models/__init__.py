@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" creating unique instance for application """
+""" __init__.py method for model package """
 from .engine import file_storage
 
 storage = file_storage.FileStorage()
