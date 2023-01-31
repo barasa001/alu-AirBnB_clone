@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """BaseModel unittest"""
-
+import unittest
 from models.base_model import BaseModel
 
 my_model = BaseModel()
