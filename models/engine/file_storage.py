@@ -18,7 +18,7 @@ class FileStorage:
     def save(self):
         dictionary = {}
 
-        for key, value in Filestorage.__objects.items():
+        for key, value in FileStorage.__objects.items():
             dictionary[key] = value.to_dict()
         with open(FileStorage.__file_path, 'w', encoding= 'utf-8') as f:
             json.dump(dictionary, f)
