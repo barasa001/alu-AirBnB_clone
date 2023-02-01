@@ -9,6 +9,10 @@ import models
 class BaseModel:
     """contains common attribute"""
     def __init__self(self, *arg, **kwargs):
+        self.id = str(uuid4())
+        self.created_at = datetime.now()
+        self.updated_at = datetime.now()
+        f = "%Y-%m-%dT%H:%M:%S.%f"
         if not kwargs:
             
             self.id = str(uuid.uuid4())
