@@ -25,7 +25,7 @@ class BaseModel:
     def __str__(self):
         class_name = "[" + self.__class__.__name__ + "]"
         lst = {k: v for (k, v) in self.__dict__.items() if (not v) is False}
-                return class_name + " (" + self.id + ") " + str(lst)
+        return class_name + " (" + self.id + ") " + str(lst)
 
     def save(self):
         self.updated_at = datetime.now()
