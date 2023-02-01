@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """Attributes for the place class"""
+from models.base_model import BaseModel
 
 class Place(BaseModel):
     city_id = ""
