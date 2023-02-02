@@ -6,6 +6,7 @@ import uuid
 from datetime import datetime
 import models
 
+
 class BaseModel:
     """contains common attribute"""
     def __init__self(self, *arg, **kwargs):
