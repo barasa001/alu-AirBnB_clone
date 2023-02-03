@@ -56,7 +56,7 @@ class TestFStorage(unittest.TestCase):
         self.assertEqual(bm_dict['my_name'], "Second name")
 
     def testtheAttributes(self):
-        """checking the atts""
+        """checking the atts"""
         self.assertEqual(hasattr(FileStorage, '_FileStorage__file_path'), True)
         self.assertEqual(hasattr(FileStorage, '_FileStorage__objects'), True)
 
