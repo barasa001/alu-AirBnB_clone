@@ -63,7 +63,7 @@ class TestFStorage(unittest.TestCase):
     def testsave(self):
         self.my_model.save()
         self.assertEqual(os.path.exists(storage._FileStorage__file_path), True)
-        slef.assertEqual(storage.all(), storage._FileStorage__objects)
+        self.assertEqual(storage.all(), storage._FileStorage__objects)
 
     def testreload(self):
         """checking the reload"""
