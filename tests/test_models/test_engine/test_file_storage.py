@@ -8,15 +8,15 @@ import os
 import json
 
 class TestFStorage(unittest.TestCase):
-    """for this test""
+    """checking this test""
     my_model = BaseModel()
 
     def testClassInstance(self):
-        """For the instance"""
+        """checking the instance"""
         self.assertIsInstance(storage, FileStorage)
 
     def testStoreBaseModel(self):
-        """Testing and saving"""
+        """checking Testing and saving"""
         self.my_model.full_name = "BaseModel Instance"
         self.my_model.save()
         bm_dict = self.my_model.to_dict()
@@ -26,7 +26,7 @@ class TestFStorage(unittest.TestCase):
         self.assertEqual(key in all_objs, True)
 
     def testStoreBaseModel2(self):
-        """Reload, saving update"""
+        """checking Reload, saving update"""
         self.my_model.my_name = "First name"
         self.my_model.save()
         bm_dict = self.my_model.to_dict()
@@ -55,7 +55,7 @@ class TestFStorage(unittest.TestCase):
         self.assertEqual(bm_dict['my_name'], "Second name")
 
     def testtheAttributes(self):
-        """For the atts""
+        """checking the atts""
         self.assertEqual(hasattr(FileStorage, '_FileStorage__file_path'), True)
         self.assertEqual(hasattr(FileStorage, '_FileStorage__objects'), True)
 
