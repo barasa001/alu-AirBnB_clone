@@ -20,7 +20,7 @@ class FileStorage:
 
         for key, value in FileStorage.__objects.items():
             dictionary[key] = value.to_dict()
-        with open(FileStorage.__file_path, 'w', encoding= 'utf-8') as f:
+        with open(FileStorage.__file_path, 'w', encoding='utf-8') as f:
             json.dump(dictionary, f)
 
     def reload(self):
@@ -32,7 +32,7 @@ class FileStorage:
         from models.place import Place
         from models.state import State
         lst = {'BaseModel': BaseModel, 'User': User, 'Place': Place, 'City':
-                City, 'Amenity': Amenity, 'State': State, 'Review': Review}
+        City, 'Amenity': Amenity, 'State': State, 'Review': Review}
 
         if os.path.exists(FileStorage.__file_path) is True:
             with open(FileStorage.__file_path, 'r') as f:
