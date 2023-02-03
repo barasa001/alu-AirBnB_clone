@@ -66,7 +66,7 @@ class TestFStorage(unittest.TestCase):
         slef.assertEqual(storage.all(), storage._FileStorage__objects)
 
     def testreload(self):
-        """Test the reload"""
+        """checking the reload"""
         self.my_model.save()
         self.assertEqual(os.path.exists(storage._FileStorage__file_path), True)
         dobj = storage.all()
@@ -77,7 +77,7 @@ class TestFStorage(unittest.TestCase):
             self.assertEqual(dobj[key].to_dict(), value.to_dict())
 
     def testSaveSelf(self):
-        """Save self"""
+        """checking self"""
         msg = "save() takes 1 positional argument but 2 were given"
         with self.assertRaises(TypeError) as e:
             FileStorage.save(self, 100)
@@ -85,7 +85,7 @@ class TestFStorage(unittest.TestCase):
         self.assertEqual(str(e.exception), msg)
 
     def test_save_FileStorage(self):
-        """test the new method"""
+        """checking the new method"""
         var1 = self.my_model.to_dict()
         new_key = var1['__class__'] + "." + var1['id']
         storage.save()
