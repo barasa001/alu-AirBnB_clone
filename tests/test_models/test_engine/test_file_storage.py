@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""For the tests"""
+""" For the tests """
 import unittest
 from models import storage
 from models.base_model import BaseModel
@@ -8,7 +8,8 @@ import os
 import json
 
 class TestFStorage(unittest.TestCase):
-    """checking this test""
+    """ checking this test """
+
     my_model = BaseModel()
 
     def testClassInstance(self):
