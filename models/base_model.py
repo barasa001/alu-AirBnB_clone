@@ -9,7 +9,7 @@ import models
 
 class BaseModel:
     """contains common attribute"""
-    def __init__self(self, *arg, **kwargs):
+    def __init__(self, *arg, **kwargs):
         if kwargs.__len__() > 0:
             for key, value in kwargs.items():
                 if key == 'created_at' or key == 'updated_at':
