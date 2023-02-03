@@ -2,7 +2,7 @@
 """For the tests"""
 import unittest
 from models import storage
-from from models.base_model import BaseModel
+from models.base_model import BaseModel
 from models.engine.file_storage import FileStorage
 import os
 import json
