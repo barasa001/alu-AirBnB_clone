@@ -59,8 +59,8 @@ class HBNBCommand(cmd.Cmd):
             else:
                 command = values[1][:-2]
                 if (command in commands.keys()and (
-                    values[0] in HBNBCommand.__my_classes)):
-                        commands[command](values[0])
+                        values[0] in HBNBCommand.__my_classes)):
+                    commands[command](values[0])
         except Exception as e:
             print(e)
 
