@@ -14,14 +14,39 @@ The classes that we will create together with their methods and attributes inclu
 
     1. User
     
-        a, Attributes specific to it;
+          Attributes specific to it;
         
-            email
+            email             first_name
             
-            password
+            password          last_name
+                       
             
-            first_name
-            
-            last_name
- 
+     2. Amenity
+     
+          Attribute specific;
+         
+             name
+             
+      3. Place
+      
+          Specific attributes;
+          
+             city_id    description        max_guest           longitude
+             
+             user_id    number_rooms       price_by_night      amenity_ids
+             
+             name       number_bathrooms   latitude
+  
+  
+  
+  
+  
+  
+   
+  
+         
+         
+     
+         
+         
  
