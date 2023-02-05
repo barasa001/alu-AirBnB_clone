@@ -1,6 +1,10 @@
 # alu-AirBnB_clone
 
-Program helps to manage the project's assets, which is AirBnB. They consist of, but are not limited to:
+This is the first part of a series of projects aimed at cloning the AirBnB.
+The project contains a series of exercises which include;
+     1. Working on the console
+     2. Creating different classes
+     3. Creating tests
 
 Make a new item (ex: a new User or a new Place)
 
