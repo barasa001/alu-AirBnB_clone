@@ -16,26 +16,23 @@ The classes that we will create together with their methods and attributes inclu
     
           Attributes specific to it;
         
-            email             first_name
-            
-            password          last_name
+            ✹email             ✹first_name            
+            ✹password          ✹last_name
                        
             
      2. Amenity
      
           Attribute specific;
          
-             name
+             ✹name
              
       3. Place
       
           Specific attributes;
           
-             city_id    description        max_guest           longitude
-             
-             user_id    number_rooms       price_by_night      amenity_ids
-             
-             name       number_bathrooms   latitude
+             ✹city_id    ✹description        ✹max_guest           ✹longitude             
+             ✹user_id    ✹number_rooms       ✹price_by_night      ✹amenity_ids             
+             ✹name       ✹number_bathrooms   ✹latitude
   
   
   
