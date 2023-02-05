@@ -3,6 +3,6 @@ This is the first project of the AirBnB.
 
 This first step is very important because we will use what we build during this project with all other following projects.
 
-Overview
+**Overview**
   
 We will be covering the following areas;
