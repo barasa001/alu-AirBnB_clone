@@ -75,3 +75,9 @@ class TestBaseModel_instantiation(unittest.TestCase):
         self.assertEqual(inst.id, "71425908")
         self.assertEqual(inst.created_at, dt)
         self.assertEqual(inst.updated_at, dt)
+
+    def test_save(self):
+        ans = BaseModel()
+        self.assertFalse(hasattr(ans, 'updated_at'))
+        ans.save()
+        self.assertTrue(hasattr(ans, 'updated_at'))
