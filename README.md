@@ -34,7 +34,19 @@ Every time the backend is initialized, an instance of FileStorage called storage
   
  <h2>The Console.</h2> 
  
- This where the user interacts with the program
+ This is the command line interpreter used to handle and manipulate all classes utilized by the application.
+ 
+ This is how it can be used;
+ 
+ **Start it**
+ 
+ It can be started by running the console.py file.
+ 
+ For example; 
+  
+     $ ./console.py
+     
+ In interactive mode, there will be a **(hbnb)** prompt.
   
   
   
