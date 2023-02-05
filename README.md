@@ -2,6 +2,8 @@
 
 This is the first part of a series of projects aimed at cloning the AirBnB.
 The project contains a series of exercises which include;
+
+
      1. Working on the console
      2. Creating different classes
      3. Creating tests
