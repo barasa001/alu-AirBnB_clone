@@ -33,6 +33,8 @@ The classes that we will create together with their specific attributes include;
 Every time the backend is initialized, an instance of FileStorage called storage is instanciated. The storage object is loaded/re-loaded from any class instances stored in the JSON file file.json. As class instances are created, updated, or deleted, the storage object is used to register corresponding changes in the file.json.
   
  <h2>The Console.</h2> 
+ 
+ This where the user interacts with the program
   
   
   
