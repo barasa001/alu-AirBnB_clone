@@ -1,19 +1,11 @@
-# alu-AirBnB_clone
+## 0x00 AirBnB Clone
+## 0x00 AirBnB Clone :ab:
+![hbnb logo](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/263/HBTN-hbnb-Final.png)
+First project in the AirBnB clone series is about laying the framework for a simple [AirBnB](http://airbnb.com/) clone.\
+We have created some base classes for recieving, serializing and deserializtion of information along with creating a console using Class cmd for added control of handling the information.
 
-This is the first part of a series of projects aimed at cloning the AirBnB.
-The project contains a series of exercises which include;
-
-
-     1. Working on the console
-     2. Creating different classes
-     3. Creating tests
-
-Make a new item (ex: a new User or a new Place)
-
-Obtain an object from a database, file, etc.
-
-Perform actions on things (count, compute stats, etc)
-
-Update an object's characteristics
-
-Destroy something
+## Environment
+## Environment :diamond_shape_with_a_dot_inside:
+Creation and testing-
+* Ubuntu 14.04.5 LTS
+* Vagrant VirtualBox
