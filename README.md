@@ -1,2 +1,2 @@
-##  AirBnB Clone 
-This is the first project that is aimed at creating the clone of AirBnB. \
+<h1 align="center">alu-AirBnB</h1>
+<p align="center">An AirBnB clone.</p>
