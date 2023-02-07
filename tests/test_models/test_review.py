@@ -1,29 +1,45 @@
 #!/usr/bin/python3
 """ """
-from tests.test_models.test_base_model import test_basemodel
+import unittest
+from models.base_model import BaseModel
 from models.review import Review
 
 
-class test_review(test_basemodel):
-    """ """
+class TestCaseReview(unittest.TestCase):
+    """Test cases for Review class."""
 
-    def __init__(self, *args, **kwargs):
-        """ """
-        super().__init__(*args, **kwargs)
-        self.name = "Review"
-        self.value = Review
+    def test_instance(self):
+        """Test for creating an instance of Review"""
+        review = Review()
+        self.assertIsInstance(review, Review)
+
+    def test_is_class(self):
+        """Test if Review is a class"""
+        review = Review()
+        self.assertEqual(str(type(review)), "<class 'models.review.Review'>")
+
+    def test_is_subclass(self):
+        """Test if Review is a subclass of BaseModel"""
+        review = Review()
+        self.assertTrue(issubclass(type(review), BaseModel))
 
     def test_place_id(self):
-        """ """
-        new = self.value()
-        self.assertEqual(type(new.place_id), str)
+        """Test if place_id can be set and retrieved correctly"""
+        review = Review()
+        self.assertEqual(review.place_id, "")
+        review.place_id = "fred123"
+        self.assertEqual(review.place_id, "fred123")
 
     def test_user_id(self):
-        """ """
-        new = self.value()
-        self.assertEqual(type(new.user_id), str)
+        """Test if user_id can be set and retrieved correctly"""
+        review = Review()
+        self.assertEqual(review.user_id, "")
+        review.user_id = "shema123"
+        self.assertEqual(review.user_id, "shema123")
 
     def test_text(self):
-        """ """
-        new = self.value()
-        self.assertEqual(type(new.text), str)
+        """Test if text can be set and retrieved correctly"""
+        review = Review()
+        self.assertEqual(review.text, "")
+        review.text = "This is a great place!"
+        self.assertEqual(review.text, "This is a great place!")

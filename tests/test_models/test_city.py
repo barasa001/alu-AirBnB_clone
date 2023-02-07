@@ -8,7 +8,7 @@ class TestCaseCity(unittest.TestCase):
     """Test cases for City class."""
 
     def test_instance(self):
-        """Test instantiation of City class."""
+        """Test of City class."""
         city = City()
         self.assertIsInstance(city, City)
 
@@ -18,7 +18,7 @@ class TestCaseCity(unittest.TestCase):
         self.assertEqual(str(type(city)), "<class 'models.city.City'>")
 
     def test_is_subclass(self):
-        """Test if City is a subclass of BaseModel."""
+        """Test if City is  subclass."""
         city = City()
         self.assertTrue(issubclass(type(city), BaseModel))
 
