@@ -8,7 +8,7 @@ from models.state import State
 class TestCaseState(unittest.TestCase):
 
     def test_instance(self):
-        """ test instance type """
+        """ test instance """
         state = State()
         self.assertIsInstance(state, State)
 
@@ -26,8 +26,8 @@ class TestCaseState(unittest.TestCase):
     def test_state_name(self):
         """ test state name """
         state = State()
-        state.name = ""
-        self.assertEqual(state.name, '')
+        state.name = "Kenya"
+        self.assertEqual(state.name, 'Kenya')
         self.assertIsNotNone(state.id)
 
     if __name__ == "__main__":
