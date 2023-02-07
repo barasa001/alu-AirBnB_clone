@@ -74,7 +74,7 @@ class TestFStorage(unittest.TestCase):
         self.assertNotEqual(dobj, FileStorage._FileStorage__objects)
         storage.reload()
         for key, value in storage.all().items():
-            self.assertDictEqual(dobj[key].to_dict(), value.to_dict())
+            self.assertGreater(dobj[key].to_dict(), value.to_dict())
 
     def testSaveSelf(self):
         """checking self"""
