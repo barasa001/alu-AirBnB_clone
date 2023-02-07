@@ -18,7 +18,7 @@ class testAmenity(unittest.TestCase):
 
     def test_inheritance(self):
         """check if it inherited"""
-        self.assertIsInstance(self.a, Amenity)
+        self.assertIsInstance(self.amen, Amenity)
 
     def test_attrs(self):
         """check the attributes"""
