@@ -26,8 +26,8 @@ class TestCaseState(unittest.TestCase):
     def test_state_name(self):
         """ test state name """
         state = State()
-        state.name = ""
-        self.assertEqual(state.name, '')
+        state.name = "Kenya"
+        self.assertEqual(state.name, 'Kenya')
         self.assertIsNotNone(state.id)
 
     if __name__ == "__main__":
