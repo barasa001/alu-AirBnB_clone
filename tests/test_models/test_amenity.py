@@ -6,7 +6,7 @@ from models.amenity import Amenity
 import datetime
 
 
-class testAmenity(unittest.Testcase):
+class testAmenity(unittest.TestCase):
     """Methods and instances test"""
 
     amen = Amenity()
