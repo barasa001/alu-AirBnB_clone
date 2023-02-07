@@ -25,7 +25,7 @@ class testAmenity(unittest.TestCase):
         self.assertTrue(hasattr(self.amen, 'id'))
         self.assertTrue(hasattr(self.amen, 'created_at'))
         self.assertTrue(hasattr(self.amen, 'name'))
-        self.assertTrue(hasattr(self.amen, 'udated_at'))
+        self.assertTrue(hasattr(self.amen, 'updated_at'))
 
     def test_type(self):
         """check the attribute type"""
