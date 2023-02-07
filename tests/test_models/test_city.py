@@ -1,24 +1,41 @@
 #!/usr/bin/python3
-""" """
-from tests.test_models.test_base_model import test_basemodel
+import unittest
+from models.base_model import BaseModel
 from models.city import City
 
 
-class test_City(test_basemodel):
-    """ """
+class TestCaseCity(unittest.TestCase):
+    """Test cases for City class."""
 
-    def __init__(self, *args, **kwargs):
-        """ """
-        super().__init__(*args, **kwargs)
-        self.name = "City"
-        self.value = City
+    def test_instance(self):
+        """Test instantiation of City class."""
+        city = City()
+        self.assertIsInstance(city, City)
+
+    def test_is_class(self):
+        """Test type of City instance."""
+        city = City()
+        self.assertEqual(str(type(city)), "<class 'models.city.City'>")
+
+    def test_is_subclass(self):
+        """Test if City is a subclass of BaseModel."""
+        city = City()
+        self.assertTrue(issubclass(type(city), BaseModel))
 
     def test_state_id(self):
-        """ """
-        new = self.value()
-        self.assertEqual(type(new.state_id), str)
+        """Test state_id attribute."""
+        city = City()
+        self.assertEqual(city.state_id, "")
+        city.state_id = "kigali"
+        self.assertEqual(city.state_id, "kigali")
 
     def test_name(self):
-        """ """
-        new = self.value()
-        self.assertEqual(type(new.name), str)
+        """Test name attribute."""
+        city = City()
+        self.assertEqual(city.name, "")
+        city.name = "bali"
+        self.assertEqual(city.name, "bali")
+        self.assertIsNotNone(city.id)
+
+    if __name__ == "__main__":
+        unittest.main()
