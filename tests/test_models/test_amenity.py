@@ -6,7 +6,7 @@ from models.amenity import Amenity
 import datetime
 
 
-class testAmenity(unittest.Testcase):
+class testAmenity(unittest.TestCase):
     """Methods and instances test"""
 
     amen = Amenity()
@@ -18,14 +18,14 @@ class testAmenity(unittest.Testcase):
 
     def test_inheritance(self):
         """check if it inherited"""
-        self.assertIsInstance(self.a, Amenity)
+        self.assertIsInstance(self.amen, Amenity)
 
     def test_attrs(self):
         """check the attributes"""
         self.assertTrue(hasattr(self.amen, 'id'))
         self.assertTrue(hasattr(self.amen, 'created_at'))
         self.assertTrue(hasattr(self.amen, 'name'))
-        self.assertTrue(hasattr(self.amen, 'udated_at'))
+        self.assertTrue(hasattr(self.amen, 'updated_at'))
 
     def test_type(self):
         """check the attribute type"""
