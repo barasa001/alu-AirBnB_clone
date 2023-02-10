@@ -2,34 +2,27 @@
 """unittest for testing states"""
 import unittest
 from models.base_model import BaseModel
-from models.state import State
+from models.state import
 
 
-class TestCaseState(unittest.TestCase):
+class TestStateClass(unittest.TestCase):
+    """Test cases for state class"""
 
-    def test_instance(self):
-        """ test instance type """
-        state = State()
-        self.assertIsInstance(state, State)
+    def setUp(self):
+        self.state = State()
 
-    def test_is_class(self):
-        """ test class """
-        state = State()
-        self.assertEqual(str(type(state)),
-                         "<class 'models.state.State'>")
+    def test_is_instance(self):
+        """test instance"""
+        my_state = State()
+        self.assertTrue(isinstance(my_state, BaseModel))
 
-    def test_is_subclass(self):
-        """ test is subclass """
-        state = State()
-        self.assertTrue(issubclass(type(state), BaseModel))
+    def test_state_is_a_subclass_of_basemodel(self):
+        self.assertTrue(issubclass(type(self.state), BaseModel))
 
-    def test_state_name(self):
-        """ test state name """
-        state = State()
-        state.name = "Kenya"
-        self.assertEqual(state.name, 'Kenya')
-        self.assertIsNotNone(state.id)
+    def test_class_attrs(self):
+        self.assertIs(type(self.state.name), str)
+        self.assertFalse(bool(self.state.name))
 
-    if __name__ == "__main__":
-        unittest.main()
 
+if __name__ == '__main__':
+    unittest.main()
