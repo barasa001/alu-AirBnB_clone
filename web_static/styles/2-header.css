@@ -1,5 +1,7 @@
 header {
-    background-color: #f0f0f0;
+    background-color: red;
+    height: 70px;
+    width: 100%;
     padding: 1rem;
     text-align: center;
 }
